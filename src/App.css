@@ -1,38 +1,373 @@
-.App {
+@font-face {
+  font-family: Bold;
+  src: url('./assets/fonts/baloo-2/Baloo2-Bold.ttf');
+}
+
+@font-face {
+  font-family: ExtraBold;
+  src: url('./assets/fonts/baloo-2/Baloo2-ExtraBold.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  gap: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 480px;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 33px;
+  font-family: ExtraBold;
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: rgb(205, 126, 80);
+}
+
+nav .logo > img {
+  width: 70%;
+}
+
+.div8 {
+  display: flex;
+  align-items: center;
+}
+
+.div8 hr {
+  margin: 0.25cm;
+  width: 80px;
+  height: 2px;
+  background-color: rgb(205, 126, 80);
+  margin-left: 25px;
+  border-style: none;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+  padding-left: 80px;
+  font-family: ExtraBold;
+  line-height: 20px;
+}
+
+.text p {
+  font-weight: 900;
+  font-family: Bold;
+}
+
+.text h1 {
+  padding: 0;
+  margin: 0;
+  font-family: ExtraBold;
+  padding-bottom: 5px;
+  font-size: 80px;
+}
+
+.text h3 {
+  padding: 0px;
+  margin: 0;
+  font-size: 46px;
+}
+
+.text h1,
+.text h3,
+.text p {
+  padding: 20px;
+  margin: 0;
+  padding-bottom: 20px;
+  color: rgb(10, 49, 64);
+}
+
+.text h1 {
+  padding-top: 30px;
+}
+
+.text span {
+  color: rgb(205, 126, 80);
+}
+
+.text p {
+  letter-spacing: 0;
+}
+
+.images {
+  width: 95%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding-left: 35px;
+  gap: 10px;
+  row-gap: 10px;
+}
+
+.images .forth-pic {
+  padding-top: 127px;
+  width: 100%;
+}
+
+.images .forth-pic img {
+  width: 100%;
+}
+
+.images .third-pic {
+  width: 90%;
+}
+
+.images .third-pic img {
+  width: 100%;
+}
+
+.images .third-pic .pic-five {
+  width: 100%;
+}
+
+.images .third-pic .pic-five img {
+  width: 100%;
+}
+
+.images .two-pics {
+  width: 100%;
+}
+
+.images .two-pics .pic-one {
+  width: 100%;
+}
+
+.images .two-pics .pic-one img {
+  width: 100%;
+}
+
+.images .two-pics .pic-two {
+  width: 100%;
+}
+
+.images .two-pics .pic-two img {
+  width: 100%;
+}
+
+.images .two-pics .pic1 .overlay {
+  background: #000000;
+  background-size: auto;
+  height: 100px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.images .two-pics .pic1 img {
+  background: linear-gradient(0deg, #fff, rgba(0, 0, 0, 0.596));
+}
+
+#About {
+  margin-top: 60px;
+}
+
+#About .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 280px;
+}
+
+#About .main .text {
+  width: 100%;
+}
+
+#About .main .text h1 {
+  padding-bottom: 50px;
+  font-size: 30px;
+  color: rgb(205, 126, 80);
+}
+
+#About .main .pic {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#About .main .pic img {
+  width: 100%;
+}
+
+#service {
+  color: #fff;
+  background-color: #0B394D;
+}
+
+#service .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+#service h1 {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 65px;
+  font-family: Bold;
+}
+
+#service .card {
+  padding: 10px;
+  border: none;
+  margin-bottom: 50px;
+  background-color: #0c4f6b6c;
+  color: #fff;
+  width: 25%;
+  height: auto;
+}
+
+#service .card hr {
+  color: rgb(205, 126, 80);
+}
+
+#service .card h2 {
+  color: rgb(205, 126, 80);
+}
+
+#service .card img {
+  width: 99.9%;
+}
+
+#mail {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+#mail .main {
+  display: flex;
+  align-items: center;
+}
+
+#mail .main .text {
+  font-weight: 900;
+  width: 100%;
+}
+
+#mail .main .text h1 {
+  color: rgb(205, 126, 80);
+  font-size: 30px;
+}
+
+#mail .main .text button {
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 15px;
+  margin-left: 20px;
+  background-color: #0c4f6b;
+  color: #fff;
+  border: none;
+}
+
+#mail .main .pic {
+  width: 100%;
+}
+
+#mail .main .pic img {
+  width: 85%;
+}
+
+#Get-in-touch {
+  margin-top: 50px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F4F6;
+}
+
+#Get-in-touch .div {
+  gap: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+#Get-in-touch .div .pic img {
+  height: 600px;
+}
+
+#Get-in-touch .div .text {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Get-in-touch .div .text button {
+  padding: 10px 10px;
+  background-color: rgb(12, 79, 107);
+  color: rgb(255, 255, 255);
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Get-in-touch .div .text input {
+  border: none;
+  background-color: #fff;
+  padding: 10px 10px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Get-in-touch .div .text .massage {
+  padding: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#Get-in-touch .div .text h1 {
+  color: rgb(205, 126, 80);
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  background: url("./assets/images/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  font-family: bold;
+  color: rgb(255, 255, 255);
+}
+
+footer h1 {
+  padding-left: 50px;
+}
+
+footer .div {
+  padding-left: 50px;
+  gap: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.logo1 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
